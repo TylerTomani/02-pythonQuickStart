@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+}
+#title-img{
+    width:50%;
+    min-width: 400px;
+}
+/* Colors */
+.r {color: red !important;}
+/* Font */
+.under { text-decoration: underline !important;}
+.main-container{display: flex;}
+.chapter-lesson-display{
+    border-top: 1px solid orange;
+    border-bottom: 1px solid orange;
+    position: sticky;
+    top: 0%;
+    background-color: white;
+}
+.chapter-container {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+.chapter {
+    margin: 1% 0;
+    margin-left: 3.25%;
+}
+iframe {
+    /* border: 1px solid black; */
+    overflow-y: hidden;
+    width: 100vmax;
+    height: 100vmax;
+}
+.chapter>a {
+    text-decoration: none;
+}
+
+.chapter>a>h2 {
+    font-size: .9rem;
+    /* color:darkorchid; */
+    color: darkmagenta
+}
+
+.chapter>ul>li {
+    margin: 2.5% 0;
+}
+
+.chapter>ul>li a {
+    font-size: .8rem;
+    font-weight: 550;
+    color: black;
+    text-decoration: none;
+    margin-left: 5%;
+}
+
+.chapter>ul>li>ul {
+    margin-left: 7.5%;
+}
+
+.chapter>ul>li>ul>li {
+    margin-left: 1.5%;
+    list-style-type: none;
+}
+.chapter>ul>li>ul>li>a {
+    color: darkslategray;
+    font-style: italic;
+}
+.chapter>ul>li>ul>li>ul {margin-left: 10.5%;}
+
+.hide { display: none;}
+.show { display: inline-block;}
+
+.hideAside {
+    width: 0;
+    opacity: 0;
+    transition: width 350ms;
+}
+
+.showAside {
+    width: 25%;
+    opacity: 1;
+    transition: width 350ms, opacity 350ms;
+}
+
+@media screen and (max-width: 660px){
+    .chapter {
+        margin-bottom: 5%;
+    } 
+    .chapter > a > h2{
+        font-size: .72rem;
+    }
+
+    .chapter > ul {
+        margin: -5% 0;
+        padding: 0;
+    }
+    .chapter > ul > li > a{
+        font-size: .62rem;
+    }
+}

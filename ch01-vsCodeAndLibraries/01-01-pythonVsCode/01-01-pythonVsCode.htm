@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-04_writeProgram</title>
+    <link rel="stylesheet" href="../../css/lesson.css">
+    <link rel="stylesheet" href="../../css/colors.css">
+    <link rel="stylesheet" href="../../css/videos.css">
+    <script src="../../js/videos.js" defer></script>
+</head>
+<body>
+    <h2 autofocus tabindex="1" class="r">01-04 Writing/Running python in Visual Studio Code</h2>
+    <header class="r">
+        <p>
+            Go back after making images for this lesson perfect
+        </p>
+    </header>
+    <div class="fcol">
+        <div class="fi">
+            <p>
+                Review <a tabindex="1" href="https://tylertomani.github.io/VsCodePythonSetup/01-installPython/installPython.html">VsCodePythonSetup</a>
+                and make sure python is installed correctly.
+            </p>
+        </div>
+    </div>
+    <h3>Visual Studio Shorcuts</h3>
+    <!--01. ⌘ + N -->
+    <div class="fc">
+        <div tabindex="1" class="fi fcol jc video-txt-container">
+            <fi class="fi fcol txt">
+                <p class="txt-p">
+                    When <i>Visual Studio Code</i> is open and no window is showing, go to File &rarr; "New Text File",
+                    or just press,
+                </p>
+                <code class="shortcut-txt asc"><span class="mdtxt"> ⌘ </span>
+                    <span class="mdsmtxt ml1 ml1">+</span>
+                    <span class="mdsmtxt ps1">N</span>
+                </code>
+            </fi>
+        </div>
+        <div class="fi flex jc video-container">
+            <video src="videos/01-cmdN.mp4" ></video>
+        </div>
+    </div>
+    <!-- 02. ⌘ + N  -->
+    <div class="fc">
+        <div tabindex="1" class="fi fcol jc video-txt-container">
+            <div class="fi fcol txt">
+                <p class="txt-p">
+                    &emsp;To create a new empty file,
+                    <br>Press,
+                </p>
+                <code class="shortcut-txt asc"><span class="mdtxt"> ⌘ </span>
+                    <span class="mdsmtxt">+</span>
+                    <span class="mdsmtxt ps1">N</span>
+                </code>
+            </div>
+            <p>
+                again.
+            </p>
+        </div>
+        <div class="fi flex jc video-container">
+            <video src="videos/02-cmdN.mp4"></video>
+        </div>
+    </div> 
+    <!-- 03. ⌘ + ⇧ Shift + S -->
+    <div class="fc">
+        <div tabindex="1" class="fi fcol jc video-txt-container">
+            <div class="fi fcol txt">
+                <p class="txt-p">
+                     If the file is new hit <code ><span class="mdsmtxt"> ⌘</span>
+                        <span class="mdsmtxt">+</span> <span class="smtxt ps1">S</span></code> to save it and 
+                        name it, or Press,
+                </p>
+                <code class="shortcut-txt asc">
+                    <span class="mdtxt"> ⌘ </span>
+                    <span class="mdsmtxt">+</span>
+                    <span class="mdtxt ps1">⇧</span>(shift)
+                    <span class="mdsmtxt">+</span>
+                    <span class="smtxt ps1">S</span>
+                </code>
+            </div>
+            <p class="txt-p">
+                to save and rename an existing one.
+            </p>
+        </div>
+        <div class="fi video-container">
+            <video src="videos/03-cmdShiftS.mp4"></video>
+        </div>
+    </div>
+    <!-- 04. ⌘ + ⇧ Shift + D -->
+    <div class="fc">
+        <div tabindex="1" class="fi fcol jc video-txt-container">
+            <div class="fi fcol txt">
+                <p class="txt-p">
+                    If you want to change to the Desktop while in the finder window,
+                    <br>Press,
+                </p>
+                <code class="shortcut-txt asc"><span class="mdtxt"> ⌘ </span>
+                    <span class="mdsmtxt">+</span>
+                    <span class="mdtxt ps1">⇧</span>(shift)
+                    <span class="mdsmtxt">+</span>
+                    <span class="smtxt ps1">D</span>
+                </code>
+            </div>
+            
+        </div>
+        <div class="fi video-container">
+            <video src="videos/04-cmdShiftD.mp4"></video>
+        </div>
+    </div>
+    <!-- 05. ⌘ + Shift + N -->
+    <div class="fc">
+        <div tabindex="1" class="fi fcol jc video-txt-container">
+            <div class="fi fcol txt">
+                <p class="txt-p">
+                    To Create a New folder while in the finder window,
+                    <br>Press,
+                </p>
+                <code class="shortcut-txt"><span class="mdtxt"> ⌘ </span>
+                    <span class="mdsmtxt">+</span>
+                    <span class="mdtxt ps1">⇧</span>(shift)
+                    <span class="mdsmtxt">+</span>
+                    <span class="smtxt ps1">N</span>
+                </code>
+            </div>
+        </div>
+        <fi class="fi video-container">
+            <video src="videos/05-cmdShiftN.mp4"></video>
+        </fi>
+    </div>
+    
+    <!-- <div class="fc ">
+        
+            
+            <p>
+                To create a new folder, hit enter to save the file in that folder
+            </p>     
+        </div>
+        
+        
+    </div>
+    <div class="fc">
+        <div class="fi">
+            Press,
+        </div>
+
+    </div>
+    
+    <div tabindex="1" class="fcol ac">
+        <div  class="fi">
+            <h3><span class="r">Important Note</span> </h3>
+            <p>
+                You must select the folder itself and open it, this allows the 
+                editor to work within the directory, 
+            </p>
+        </div>
+        <div class="fi">
+            
+            <sub class="r">This stumped me alot at first</sub>
+        </div>
+    </div>
+    <div class="fc">
+        <div class="fi fcol jc">
+            <img class="md-img" src="images/01-open.png">
+        </div>
+        <div class="fi fcol jc">
+            <img class="md-img" src="images/02-clickFolder.png">
+        </div>
+        
+    </div>
+    <div class="fc">
+        <div class="fi fcol jc">
+            <div tabindex="1" class="fi">
+                <p>
+                    &emsp;The border at the bottom of the VS Code editor will change
+                    to a <span class="vsblue mdsmtxt">bluish</span> color,
+                </p>
+                <p>
+                    &emsp;Indicating a folder/directory is open and not an individual file
+                </p>
+            </div>
+        </div>
+        <div class="fi">
+            <img class="md-img" src="images/03-folderOpened.png">
+        </div>
+        
+    </div>
+    
+    <div tabindex="1" class="fcol ac">
+        <div class="fi">
+            <p>
+                <code class="shortcut-txt"><span class="lgtxt"> ⌘ </span>
+                    <span class="mdsmtxt">+</span>
+                    <span class="mdtxt ps1">B</span>
+                </code>
+            </p>
+        </div>
+        <div class="fi">
+            <p>
+                Toggles the side menu with the directories contents.
+            </p>
+        </div>
+    </div>
+
+    <div class="fc">
+        <div class="fi fcol jc">
+            <img class="md-img" src="images/04-toggleDirOff.png">    
+        </div>
+        <div class="fi fcol jc">
+            <img class="md-img" src="images/05-toggleDirOn.png">
+        </div>
+    </div>
+    
+    <div tabindex="1" class="fcol ac">
+        <div class="fi">
+            <p>
+                <code class="shortcut-txt"><span class="lgtxt"> ⌘ </span>
+                    <span class="mdsmtxt">+</span>
+                    <span class="mdtxt ps1">Shift</span>
+                    <span class="shiftKey xlgtxt"> ⇧</span>
+                    <span class="mdsmtxt">+</span>
+                    <span class="mdtxt ps1">E</span>
+                </code>
+            </p>
+        </div>
+        <div class="fi">
+            <p>
+                Will give the directory focus, so you can use the <span class="mdsmtxt">&uarr;</span> and <span class="mdsmtxt">&darr;</span>
+                arrows to navigate to folders.
+            </p>
+        </div>
+        <div class="fi">
+            <sub tabindex="1" class="r">Notice the subtle <span class="vsblue">bluish</span> outline around the side menu</sub>
+        </div>
+
+    </div>
+
+    <div class="fc">
+        <div class="fi fcol jc">
+            <img class="md-img" src="images/07-sideMenu.png">
+        </div>
+        <div class="fi fcol jc">
+            <img class="md-img" src="images/08-sideMenuFocus.png">
+
+        </div>
+    </div>
+
+    <div class="fc">
+        <div class="fi fcol jc">
+            <div tabindex="1" class="fi">
+                <p>
+                    This means you can use the arrows to navigate your way through the directory
+                </p>
+            </div>
+        </div>
+        <div class="fi fcol jc">
+            <video loop muted autoplay src="videos/01-moveArrowDropFolder.mp4"></video>
+        </div>
+    </div>
+
+    <div class="fc">
+        <div class="fi fcol jc">
+            <div tabindex="1" class="fi">
+                <p>
+                    &emsp;Right click in the Directories Explore side menu and select 
+                    <q>create new file</q>
+                </p>
+                <p>
+                    As the <code>.py</code> etension to a file makes it a python script. 
+                    Name this file <code>hello.py</code>
+                </p>
+            </div>
+            
+        </div>
+        <div class="fi">
+            <video loop muted autoplay src="videos/02-createPyScript.mov"></video>
+        </div>
+        
+    </div>
+    
+    <div tabindex="1" class="fcol ac jc">
+        <div class="fi">
+            You can also Hit cmd + &darr; down arrow to open a file as well 
+            as drop the content of a folder.
+        </div>
+        <div class="fi">
+            <code class="shortcut-txt"><span class="lgtxt"> ⌘ </span>
+                <span class="mdsmtxt">+</span>
+                <span class="shiftKey xlgtxt"> ↓</span>
+                
+            </code>
+        </div>
+    </div>
+    <div class="fc">
+        <div class="fi fcol jc">
+            <div class="fi">
+                <p>Write a simple script</p>
+            </div>
+            <div class="code-container align-self-center">
+                <pre tabindex="1" class="black-code copy-code">
+<span class="g"># print 'hello World'</span>
+print('hello world')</pre>
+            </div>
+            <div class="fi">
+                <p>
+                    We can run it directly in the VS Code terminal 
+                </p>
+            </div>
+        </div>
+        <div class="fi">
+            <img class="md-img" src="images/09-runPyScript.png">
+        </div> 
+    </div>
+    <div class="fcol ac">
+        <div class="fi">
+            The shortcut that allows me to run the script in the VS terminal is     
+        </div>
+        <div class="fi">
+            <code class="shortcut-txt">
+                <span class="lgtxt"> ⌘ </span>
+                <span class="mdsmtxt">+</span>
+                <span class="lgtxt"> ⌥</span>
+                <span class="mdsmtxt">+</span>
+                <span class="mdtxt"> \</span>
+                 
+            </code>
+        </div>
+    </div>
+    <div class="fc">
+        <div class="fi fcol jc">
+            <div class="fi">
+                <p>
+                    You can assign your own shorcut by
+                </p>
+            </div>
+            <div class="fi">
+                <code class="shortcut-txt">
+                    <span class="lgtxt"> ⌘ </span>
+                    <span class="mdsmtxt">+</span>
+                    <span class="mdtxt ps1">Shift</span>
+                    <span class="shiftKey xlgtxt"> ⇧</span>
+                    <span class="mdsmtxt">+</span>
+                    <span class="mdtxt"> P </span>
+                </code>
+            </div>
+            <div class="fi">
+                <p>
+                    Type Open keyboard shortcuts
+                </p>
+            </div>
+            <div class="fi">
+                <p>
+                    Find <q>Run python script in terminal</q> 
+                    and change it
+                </p>
+            </div>     
+        </div>
+        <div class="fi">
+            <video muted autoplay loop  src="videos/03-keyboardBindingShortcut.mov"  ></video>
+            
+        </div>
+    </div>
+    <div class="fc">
+        <div class="fi fcol jc">
+            <div class="fi">
+                <p>
+                    You can also run a python script in the Mac terminial by changing
+                    to the direcotory where the script is located with <code>cd</code>
+                </p>
+            </div>
+            <div class="fi">
+                then typing <code>python3 </code> followed by the script name
+            </div>
+            <div class="code-container align-self-center">
+                <code tabindex="1" class="black-code copy-code">
+                    python3 hello.py
+                </code>
+            </div>
+        </div>
+        <div class="fi">
+            <img class="md-img" src="images/10-runInMac.png">
+        </div>
+        
+    </div> -->
+    <footer tabindex="1"></footer>
+
+    
+    
+</body>
+</html>
