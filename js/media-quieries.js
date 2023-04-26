@@ -39,7 +39,7 @@ function toggleAside(e){
 }
 // If the aside menu is hidden, hovering over header 
 header.addEventListener('mouseenter', showAside)
-
+chapterLessonDisplay.addEventListener('mouseenter', showAside)
 function showAside(){
     if(aside.classList.contains('hideAside') && currentWidth < hideAsideWidth){
         aside.classList.remove('hideAside')
@@ -65,4 +65,3 @@ iframeQuery.addEventListener('focusin', e => {
         // aside.classList.remove('showAside')
     }
 })
-chapterLessonDisplay.addEventListener('mouseenter', showAside)

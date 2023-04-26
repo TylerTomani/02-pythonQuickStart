@@ -41,6 +41,7 @@ h2 {
 .fi > p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 1% 0;
+    padding: .5% 1%
 }
 
 .shortcut-txt {

@@ -25,6 +25,8 @@ header {
     display: flex;
     flex-direction: column;
     width: 25%;
+    position: sticky;
+    top:0;
 }
 .chapter {
     margin: 1% 0;
