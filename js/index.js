@@ -4,8 +4,15 @@ const aside = document.querySelector('.chapter-container')
 const iframe = document.querySelector('iframe')
 const chapterDisplay = document.querySelector('.chapter-display')
 const lessonDisplay = document.querySelector('.lesson-display')
+const chapterLessonDisplay = document.querySelector('.chapter-lesson-display')
 let lessonArray = []
 let currentLesson = ''
+
+chapterLessonDisplay.addEventListener('click', e => {
+    console.log(e)
+    scroll(0,0)
+})
+
 
 // Event listeners for each chapter drop menus
 hideLessons()
@@ -41,9 +48,7 @@ function toggleLessons(ul){
     } else {
         ul.classList.add('hide')
     }
-
 }
-
 
 // Even listeners for loading each lesson with mouse click and enter key
 lessons.forEach(lesson => {
@@ -61,7 +66,6 @@ lessons.forEach(lesson => {
             e.stopPropagation()
             const chapterCurrent =  e.target.parentElement.parentElement.parentElement
             const titleChapter = chapterCurrent.querySelector('a')
-            console.log(titleChapter.innerText)
             chapterDisplay.innerText = titleChapter.innerText
             lessonDisplay.innerHTML = "&rarr; " + e.target.innerText
             currentLesson = e.target
@@ -82,7 +86,6 @@ lessons.forEach(lesson => {
         e.stopPropagation()
         const chapterCurrent =  e.target.parentElement.parentElement.parentElement
         const titleChapter = chapterCurrent.querySelector('a')
-        console.log(titleChapter.innerText)
         chapterDisplay.innerText = titleChapter.innerText
         lessonDisplay.innerHTML = "&rarr; " + e.target.innerText
         currentLesson = e.target

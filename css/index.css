@@ -18,19 +18,23 @@ header {
     border-top: 1px solid orange;
     border-bottom: 1px solid orange;
     position: sticky;
-    top: 0%;
+    top: 0%;;
     background-color: white;
+    z-index: 1;
 }
 .chapter-container {
     display: flex;
     flex-direction: column;
     width: 25%;
+    /* I Can't get the aside to sticky when scrolling */
+    /* position: -webkit-sticky;
     position: sticky;
-    top:0;
+    top: 50%; */
 }
 .chapter {
     margin: 1% 0;
     margin-left: 3.25%;
+    
 }
 iframe {
     /* border: 1px solid black; */
@@ -102,6 +106,10 @@ iframe {
         padding: 0;
     }
     .chapter > ul > li > a{
-        font-size: .62rem;
+        font-size: .575rem;
+    }
+    .chapter > ul > li {
+        font-size: .575rem;
+        margin-bottom: 5%;
     }
 }

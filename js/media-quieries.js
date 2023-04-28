@@ -1,7 +1,8 @@
 //  The variable aside is in index.js
+//  The variable chapterLessonDisplay is in index.js
 const title = document.getElementById('title')
+
 const header = document.querySelector('header')
-const chapterLessonDisplay = document.querySelector(".chapter-lesson-display");
 const iframeQuery = document.querySelector('iframe')
 let currentWidth;
 let hideAsideWidth = 780;

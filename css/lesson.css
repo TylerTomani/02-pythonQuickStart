@@ -3,6 +3,8 @@
     padding: 0;
     margin-left: .25%;
 }
+/* Colors */
+.r {color:red;}
 /* Flex */
 .fc {
     display: flex;
@@ -43,6 +45,9 @@ h2 {
     margin: 1% 0;
     padding: .5% 1%
 }
+.command {
+    line-height: -20;
+}
 
 .shortcut-txt {
     /* display: flex; */
@@ -60,4 +65,15 @@ h2 {
 .img-border {
     border: 1px solid black;
 }
-
+.right-enlarge-img {
+    position: relative;
+    top: -10%;
+    left: -50%;
+    width: 150% !important;
+}
+.left-enlarge-img {
+    position: relative;
+    top: -10%;
+    left: 30%;
+    width: 150% !important;
+}
