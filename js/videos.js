@@ -64,8 +64,11 @@ function playPauseVideo(e){
     console.log('parent',parent)
     let video = parent.querySelector('.video-container > video')
     if(!videoPlaying){
+        video.classList.add('right-enlarge-video')
         video.play()
+        video.focus()
     } else { 
+        video.classList.remove('right-enlarge-video')
         video.pause()
     }
     videoPlaying = !videoPlaying
